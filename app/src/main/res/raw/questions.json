@@ -1,0 +1,92 @@
+{
+  "Knowledge": [
+    {
+      "question": "What is the capital of France?",
+      "options": ["Berlin", "Madrid", "Paris", "Rome"],
+      "answerIndex": 2,
+      "score": 1
+    },
+    {
+      "question": "Who discovered gravity?",
+      "options": ["Galileo", "Newton", "Einstein", "Tesla"],
+      "answerIndex": 1,
+      "score": 1
+    }
+    
+  ],
+  "Education": [
+    {
+      "question": "What is the value of π (pi) approximately?",
+      "options": ["3.14", "2.72", "1.61", "1.41"],
+      "answerIndex": 0,
+      "score": 1
+    },
+    {
+      "question": "What do we call a triangle with all sides equal?",
+      "options": ["Scalene", "Isosceles", "Equilateral", "Right-angled"],
+      "answerIndex": 2,
+      "score": 1
+    }
+    
+  ],
+  "Sports": [
+    {
+      "question": "How many players are on a football (soccer) team?",
+      "options": ["9", "10", "11", "12"],
+      "answerIndex": 2,
+      "score": 1
+    },
+    {
+      "question": "Which country has won the most FIFA World Cups?",
+      "options": ["Germany", "Argentina", "Italy", "Brazil"],
+      "answerIndex": 3,
+      "score": 1
+    }
+    
+  ],
+  "For Kids": [
+    {
+      "question": "What color is the sky on a clear day?",
+      "options": ["Green", "Blue", "Red", "Yellow"],
+      "answerIndex": 1,
+      "score": 1
+    },
+    {
+      "question": "How many legs does a spider have?",
+      "options": ["6", "8", "10", "12"],
+      "answerIndex": 1,
+      "score": 1
+    }
+    
+  ],
+  "Tech & Games": [
+    {
+      "question": "Which company developed the Android OS?",
+      "options": ["Apple", "Microsoft", "Google", "IBM"],
+      "answerIndex": 2,
+      "score": 1
+    },
+    {
+      "question": "What does CPU stand for?",
+      "options": ["Central Power Unit", "Central Processing Unit", "Computer Performance Unit", "Control Processing Unit"],
+      "answerIndex": 1,
+      "score": 1
+    }
+    
+  ],
+  "Culture & Society": [
+    {
+      "question": "Which country is known for the Great Wall?",
+      "options": ["India", "Japan", "China", "Egypt"],
+      "answerIndex": 2,
+      "score": 1
+    },
+    {
+      "question": "What is the traditional clothing in Japan called?",
+      "options": ["Kimono", "Sari", "Hanbok", "Dirndl"],
+      "answerIndex": 0,
+      "score": 1
+    }
+    
+  ]
+}

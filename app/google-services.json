@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "389850818998",
+    "project_id": "quizini-68fc1",
+    "storage_bucket": "quizini-68fc1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389850818998:android:1490eea494013dbf553917",
+        "android_client_info": {
+          "package_name": "com.example.quiziniapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1YSml9_H_nSrKnJArr6l3kXJ1IobB_94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
