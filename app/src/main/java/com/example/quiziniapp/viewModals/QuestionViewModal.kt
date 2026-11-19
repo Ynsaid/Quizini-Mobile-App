@@ -1,4 +1,4 @@
-package com.example.quiziniapp.data
+package com.example.quiziniapp.viewModals
 
 import android.content.Context
 import com.example.quiziniapp.R

@@ -7,8 +7,8 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowLeft
 import androidx.compose.material.icons.filled.CheckCircle
-import androidx.compose.material.icons.filled.KeyboardArrowLeft
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -27,8 +27,8 @@ import androidx.navigation.NavController
 import com.example.quiziniapp.heplers.UserPreferences
 import com.example.quiziniapp.R
 import com.example.quiziniapp.Route
-import com.example.quiziniapp.data.Question
-import com.example.quiziniapp.data.loadQuestionsFromRaw
+import com.example.quiziniapp.viewModals.Question
+import com.example.quiziniapp.viewModals.loadQuestionsFromRaw
 import com.example.quiziniapp.ui.theme.APP_BG
 import com.example.quiziniapp.ui.theme.Card_Color
 import kotlinx.coroutines.delay
@@ -70,7 +70,7 @@ fun QuizScreen(navController: NavController, category: String) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
-                imageVector = Icons.Default.KeyboardArrowLeft,
+                imageVector = Icons.AutoMirrored.Filled.KeyboardArrowLeft,
                 contentDescription = "Back",
                 modifier = Modifier
                     .size(32.dp)
