@@ -1,4 +1,4 @@
-package com.example.quiziniapp.Modals
+package com.example.quiziniapp.modals
 
 data class Question(
     val question: String,

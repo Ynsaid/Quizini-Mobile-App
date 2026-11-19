@@ -1,4 +1,4 @@
-package com.example.quiziniapp.Screens
+package com.example.quiziniapp.screens
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -27,7 +27,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.example.quiziniapp.Heplers.UserPreferences
+import com.example.quiziniapp.heplers.UserPreferences
 import com.example.quiziniapp.R
 import com.example.quiziniapp.Route
 import com.example.quiziniapp.ui.theme.APP_BG

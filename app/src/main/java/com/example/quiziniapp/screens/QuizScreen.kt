@@ -1,4 +1,4 @@
-package com.example.quiziniapp.Screens
+package com.example.quiziniapp.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -24,7 +24,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.example.quiziniapp.Heplers.UserPreferences
+import com.example.quiziniapp.heplers.UserPreferences
 import com.example.quiziniapp.R
 import com.example.quiziniapp.Route
 import com.example.quiziniapp.data.Question
@@ -33,16 +33,17 @@ import com.example.quiziniapp.ui.theme.APP_BG
 import com.example.quiziniapp.ui.theme.Card_Color
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import kotlin.time.Duration.Companion.milliseconds
 import kotlin.time.Duration.Companion.seconds
 
 @Composable
 fun QuizScreen(navController: NavController, category: String) {
     val context = LocalContext.current
     val questions = remember { mutableStateListOf<Question>() }
-    var currentQuestionIndex by remember { mutableStateOf(0) }
-    var selectedIndex by remember { mutableStateOf(-1) }
-    var score by remember { mutableStateOf(0) }
-    var correctAnswersCount by remember { mutableStateOf(0) }
+    var currentQuestionIndex by remember { mutableIntStateOf(0) }
+    var selectedIndex by remember { mutableIntStateOf(-1) }
+    var score by remember { mutableIntStateOf(0) }
+    var correctAnswersCount by remember { mutableIntStateOf(0) }
     var answered by remember { mutableStateOf(false) }
     val coroutineScope = rememberCoroutineScope()
 
@@ -84,7 +85,6 @@ fun QuizScreen(navController: NavController, category: String) {
         }
 
         QuizCardWithFloatingProgress(
-            totalQuestions = questions.size,
             answeredQuestions = currentQuestionIndex + 1,
             questionText = currentQuestion.question
         )
@@ -96,7 +96,7 @@ fun QuizScreen(navController: NavController, category: String) {
                 val isCorrect = answered && index == currentQuestion.answerIndex
                 val isWrong = answered && index == selectedIndex && index != currentQuestion.answerIndex
 
-                solutionCard(
+                SolutionCard(
                     text = option,
                     selected = index == selectedIndex,
                     isCorrect = isCorrect,
@@ -127,7 +127,7 @@ fun QuizScreen(navController: NavController, category: String) {
                 }
 
                 coroutineScope.launch {
-                    delay(1000)
+                    delay(1000.milliseconds)
                     if (currentQuestionIndex < questions.lastIndex) {
                         currentQuestionIndex++
                         selectedIndex = -1
@@ -156,11 +156,10 @@ fun QuizScreen(navController: NavController, category: String) {
 
 @Composable
 fun QuizCardWithFloatingProgress(
-    totalQuestions: Int,
     answeredQuestions: Int,
     questionText: String
 ) {
-    var time by remember(answeredQuestions) { mutableStateOf(60) }
+    var time by remember(answeredQuestions) { mutableIntStateOf(60) }
     val totalTime = 60
     val progress = time / totalTime.toFloat()
 
@@ -223,7 +222,7 @@ fun QuizCardWithFloatingProgress(
 }
 
 @Composable
-fun solutionCard(
+fun SolutionCard(
     text: String,
     selected: Boolean = false,
     isCorrect: Boolean = false,

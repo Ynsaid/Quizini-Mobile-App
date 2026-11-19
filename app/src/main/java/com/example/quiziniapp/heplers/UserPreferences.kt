@@ -1,4 +1,4 @@
-package com.example.quiziniapp.Heplers
+package com.example.quiziniapp.heplers
 
 import android.content.Context
 import androidx.datastore.preferences.core.edit

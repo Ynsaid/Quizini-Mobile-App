@@ -10,11 +10,11 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.quiziniapp.Screens.CongsFailedScreen
-import com.example.quiziniapp.Screens.HomeScreen
-import com.example.quiziniapp.Screens.QuizScreen
-import com.example.quiziniapp.Screens.QuizzesScreen
-import com.example.quiziniapp.Screens.RankScreen
+import com.example.quiziniapp.screens.CongsFailedScreen
+import com.example.quiziniapp.screens.HomeScreen
+import com.example.quiziniapp.screens.QuizScreen
+import com.example.quiziniapp.screens.QuizzesScreen
+import com.example.quiziniapp.screens.RankScreen
 import com.example.quiziniapp.ui.theme.QuiziniAppTheme
 
 class MainActivity : ComponentActivity() {
